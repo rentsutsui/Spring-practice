@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>Spring 練習問題 基礎編 Practice4-02</h1>
+	<p>Formクラスの利用</p>
+
+	<form method="post" th:action="@{/favorite/result}">
+		<h4>下記の項目を入力し送信ボタンをクリックしてください。</h4>
+		<p>好きな果物は？ 　　<input type="text" name="fruit" /></p>
+		<p>好きなスナックは？ <input type="text" name="snack" /></p>
+		<p>好きなスイーツは？ <input type="text" name="sweet" /></p>
+		<p>好きなおかずは？ 　<input type="text" name="sidedish" /></p>
+		<a th:href="@{/favorite/result}"><input type="submit" value="送信" /></a>
+</body>
+
+</html>
